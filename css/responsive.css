@@ -33,6 +33,7 @@
             30px;
 
     }
+   
 
 
     .gaming-box {
@@ -74,6 +75,9 @@
 
     }
 
+   .navbar.active {
+    display: flex;
+   }
 
     .hero {
 
