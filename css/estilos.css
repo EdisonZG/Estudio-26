@@ -552,13 +552,9 @@ a {
    GAMING
 ========================= */
 
-.gaming {
-
-    background:
-        var(--negro-suave);
-
+.gaming-section {
+    background: var(--negro-suave);
 }
-
 
 .gaming-box {
 
