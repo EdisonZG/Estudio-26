@@ -2,117 +2,119 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Estudio 26 - Centro de diseño, investigación y desarrollo tecnológico.">
+          content="Estudio 26 - Comunidad gamer, tecnología, mantenimiento de computadores y consolas. Torneos de Call of Duty Mobile y servicios a domicilio.">
 
-    <meta name="theme-color" content="#050505">
+    <meta name="keywords"
+          content="Estudio 26, EdisonZG26, gaming, Call of Duty Mobile, mantenimiento computadores, mantenimiento consolas, Bogotá">
 
-    <title>Estudio 26 | Diseño, Investigación y Desarrollo</title>
+    <meta name="author"
+          content="Estudio 26">
 
+    <title>Estudio 26 | Gaming & Tecnología</title>
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- =========================
+    <!-- =====================================================
          ENCABEZADO
-    ========================== -->
+    ====================================================== -->
+
     <header class="header">
 
-        <div class="logo">
-            <span class="logo-symbol">◈</span>
-            <span>ESTUDIO 26</span>
-        </div>
+        <div class="container nav-container">
 
-        <nav class="navigation">
-            <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">🦖</span>
+                <span class="logo-text">ESTUDIO <strong>26</strong></span>
+            </a>
+
+            <nav class="navbar">
+
+                <a href="#inicio">Inicio</a>
+                <a href="#gaming">Gaming</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+
+            </nav>
+
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Abrir menú">
+                ☰
+            </button>
+
+        </div>
 
     </header>
 
 
     <main>
 
-        <!-- =========================
-             INICIO
-        ========================== -->
+        <!-- =================================================
+             HERO / INICIO
+        ================================================== -->
+
         <section id="inicio" class="hero">
 
-            <div class="hero-content">
+            <div class="container hero-content">
 
-                <p class="hero-tag">
-                    DISEÑO • INVESTIGACIÓN • DESARROLLO
-                </p>
+                <div class="hero-text">
 
-                <h1>
-                    Bienvenido a
-                    <span>Estudio 26</span>
-                </h1>
+                    <span class="hero-tag">
+                        GAMING • TECNOLOGÍA • CREATIVIDAD
+                    </span>
 
-                <p class="hero-description">
-                    Un espacio dedicado a transformar ideas en proyectos,
-                    soluciones y experiencias mediante tecnología,
-                    creatividad e investigación.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#proyectos" class="button primary">
-                        Ver proyectos
-                    </a>
-
-                    <a href="#contacto" class="button secondary">
-                        Contactarme
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="hero-visual">
-                <div class="tech-circle">
-                    <span>26</span>
-                </div>
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             NOSOTROS
-        ========================== -->
-        <section id="nosotros" class="section">
-
-            <div class="section-title">
-                <span>01</span>
-                <h2>Sobre Estudio 26</h2>
-            </div>
-
-            <div class="about-content">
-
-                <div>
-                    <p>
-                        Estudio 26 nace como un espacio para explorar,
-                        diseñar, investigar y desarrollar nuevas ideas.
-                    </p>
+                    <h1>
+                        Bienvenido a
+                        <span>Estudio 26</span>
+                    </h1>
 
                     <p>
-                        Nuestro objetivo es combinar creatividad y
-                        tecnología para convertir conceptos en proyectos
-                        reales.
+                        Un espacio donde la tecnología, el gaming
+                        y la creatividad se encuentran.
                     </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#gaming"
+                           class="btn btn-primary">
+                            🎮 Zona Gamer
+                        </a>
+
+                        <a href="#servicios"
+                           class="btn btn-secondary">
+                            🖥️ Servicios
+                        </a>
+
+                    </div>
+
                 </div>
 
-                <div class="about-card">
-                    <span class="card-number">26</span>
-                    <h3>Crear · Investigar · Desarrollar</h3>
-                    <p>
-                        La innovación comienza con una idea.
-                    </p>
+                <div class="hero-visual">
+
+                    <div class="hero-card">
+
+                        <div class="hero-card-icon">
+                            🦖
+                        </div>
+
+                        <h2>ESTUDIO 26</h2>
+
+                        <p>
+                            Gaming & Tecnología
+                        </p>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -120,128 +122,277 @@
         </section>
 
 
-        <!-- =========================
-             PROYECTOS
-        ========================== -->
-        <section id="proyectos" class="section dark-section">
+        <!-- =================================================
+             GAMING
+        ================================================== -->
 
-            <div class="section-title">
-                <span>02</span>
-                <h2>Proyectos</h2>
-            </div>
+        <section id="gaming" class="section gaming-section">
 
-            <div class="projects-grid">
+            <div class="container">
 
-                <article class="project-card">
+                <div class="section-heading">
 
-                    <span class="project-number">01</span>
+                    <span class="section-tag">
+                        🎮 GAMING
+                    </span>
 
-                    <h3>Desarrollo Web</h3>
-
-                    <p>
-                        Creación de páginas y experiencias digitales
-                        utilizando tecnologías web modernas.
-                    </p>
-
-                    <a href="#">Explorar →</a>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <span class="project-number">02</span>
-
-                    <h3>Aplicaciones</h3>
+                    <h2>
+                        La comunidad <span>Gamer</span>
+                    </h2>
 
                     <p>
-                        Desarrollo de aplicaciones móviles y soluciones
-                        digitales para diferentes necesidades.
+                        Participa, compite y forma parte de nuestra
+                        comunidad gamer.
                     </p>
 
-                    <a href="#">Explorar →</a>
-
-                </article>
+                </div>
 
 
-                <article class="project-card">
+                <div class="cards-grid">
 
-                    <span class="project-number">03</span>
+                    <!-- TORNEOS -->
 
-                    <h3>Investigación</h3>
+                    <article class="card gaming-card">
 
-                    <p>
-                        Exploración de nuevas ideas, tecnologías y
-                        posibilidades de desarrollo.
-                    </p>
+                        <div class="card-icon">
+                            🏆
+                        </div>
 
-                    <a href="#">Explorar →</a>
+                        <h3>
+                            Torneos de Call of Duty Mobile
+                        </h3>
 
-                </article>
+                        <p>
+                            Demuestra tus habilidades participando
+                            en nuestros torneos de Call of Duty Mobile.
+                        </p>
+
+                        <a href="#torneo"
+                           class="card-link">
+                            Ver torneo →
+                        </a>
+
+                    </article>
 
 
-                <article class="project-card">
+                    <!-- PREMIO -->
 
-                    <span class="project-number">04</span>
+                    <article class="card gaming-card">
 
-                    <h3>Proyectos Experimentales</h3>
+                        <div class="card-icon">
+                            🎁
+                        </div>
 
-                    <p>
-                        Espacio para experimentar con conceptos,
-                        interfaces, tecnología y creatividad.
-                    </p>
+                        <h3>
+                            Pase de batalla semanal
+                        </h3>
 
-                    <a href="#">Explorar →</a>
+                        <p>
+                            Participa en nuestras dinámicas y
+                            compite por un pase de batalla semanal.
+                        </p>
 
-                </article>
+                        <a href="#torneo"
+                           class="card-link">
+                            Participar →
+                        </a>
+
+                    </article>
+
+
+                    <!-- CONTENIDO -->
+
+                    <article class="card gaming-card">
+
+                        <div class="card-icon">
+                            🔥
+                        </div>
+
+                        <h3>
+                            Contenido Gamer
+                        </h3>
+
+                        <p>
+                            Clips, partidas, novedades, memes,
+                            retos y contenido para la comunidad.
+                        </p>
+
+                        <a href="#facebook"
+                           class="card-link">
+                            Ver contenido →
+                        </a>
+
+                    </article>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
+        <!-- =================================================
+             TORNEO
+        ================================================== -->
+
+        <section id="torneo" class="section tournament-section">
+
+            <div class="container">
+
+                <div class="tournament">
+
+                    <div class="tournament-content">
+
+                        <span class="section-tag">
+                            🏆 TORNEO SEMANAL
+                        </span>
+
+                        <h2>
+                            ¿Tienes lo necesario para ganar?
+                        </h2>
+
+                        <p>
+                            Únete a nuestra comunidad de Call of Duty
+                            Mobile y participa en los torneos semanales.
+                        </p>
+
+                        <div class="tournament-info">
+
+                            <div>
+                                <strong>🎮</strong>
+                                <span>Call of Duty Mobile</span>
+                            </div>
+
+                            <div>
+                                <strong>🏆</strong>
+                                <span>Competencia semanal</span>
+                            </div>
+
+                            <div>
+                                <strong>🎁</strong>
+                                <span>Pase de batalla</span>
+                            </div>
+
+                        </div>
+
+                        <a href="https://www.facebook.com/EdisonZG26"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary">
+                            Participar en Facebook
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
              SERVICIOS
-        ========================== -->
-        <section id="servicios" class="section">
+        ================================================== -->
 
-            <div class="section-title">
-                <span>03</span>
-                <h2>Servicios</h2>
-            </div>
+        <section id="servicios" class="section services-section">
 
-            <div class="services-list">
+            <div class="container">
 
-                <div class="service">
-                    <span>01</span>
-                    <h3>Desarrollo Web</h3>
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        🖥️ SERVICIOS TECNOLÓGICOS
+                    </span>
+
+                    <h2>
+                        Mantenimiento y <span>soporte</span>
+                    </h2>
+
                     <p>
-                        Diseño y desarrollo de sitios web.
+                        Soluciones para mantener tus equipos
+                        funcionando correctamente.
                     </p>
+
                 </div>
 
-                <div class="service">
-                    <span>02</span>
-                    <h3>Desarrollo de Software</h3>
-                    <p>
-                        Creación de soluciones y aplicaciones digitales.
-                    </p>
-                </div>
 
-                <div class="service">
-                    <span>03</span>
-                    <h3>Diseño Digital</h3>
-                    <p>
-                        Diseño de interfaces, conceptos e identidad visual.
-                    </p>
-                </div>
+                <div class="cards-grid services-grid">
 
-                <div class="service">
-                    <span>04</span>
-                    <h3>Mantenimiento Electrónico</h3>
-                    <p>
-                        Diagnóstico y mantenimiento de equipos electrónicos.
-                    </p>
+                    <!-- COMPUTADORES -->
+
+                    <article class="card service-card">
+
+                        <div class="card-icon">
+                            💻
+                        </div>
+
+                        <h3>
+                            Mantenimiento de computadores
+                        </h3>
+
+                        <p>
+                            Limpieza, mantenimiento preventivo,
+                            optimización y revisión general.
+                        </p>
+
+                        <a href="#contacto"
+                           class="card-link">
+                            Solicitar servicio →
+                        </a>
+
+                    </article>
+
+
+                    <!-- CONSOLAS -->
+
+                    <article class="card service-card">
+
+                        <div class="card-icon">
+                            🎮
+                        </div>
+
+                        <h3>
+                            Mantenimiento de consolas
+                        </h3>
+
+                        <p>
+                            Limpieza y mantenimiento para
+                            mantener tu consola en buenas condiciones.
+                        </p>
+
+                        <a href="#contacto"
+                           class="card-link">
+                            Solicitar servicio →
+                        </a>
+
+                    </article>
+
+
+                    <!-- DOMICILIO -->
+
+                    <article class="card service-card">
+
+                        <div class="card-icon">
+                            🏠
+                        </div>
+
+                        <h3>
+                            Servicio a domicilio
+                        </h3>
+
+                        <p>
+                            Atención directamente en tu domicilio
+                            según disponibilidad y ubicación.
+                        </p>
+
+                        <a href="#contacto"
+                           class="card-link">
+                            Solicitar servicio →
+                        </a>
+
+                    </article>
+
                 </div>
 
             </div>
@@ -249,35 +400,256 @@
         </section>
 
 
-        <!-- =========================
+        <!-- =================================================
+             PROCESO
+        ================================================== -->
+
+        <section class="section process-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        ⚙️ NUESTRO PROCESO
+                    </span>
+
+                    <h2>
+                        Tecnología sin <span>complicaciones</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <div class="process-step">
+
+                        <span class="step-number">01</span>
+
+                        <h3>
+                            Contacto
+                        </h3>
+
+                        <p>
+                            Cuéntanos qué problema presenta
+                            tu equipo.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-step">
+
+                        <span class="step-number">02</span>
+
+                        <h3>
+                            Diagnóstico
+                        </h3>
+
+                        <p>
+                            Revisamos el equipo para identificar
+                            el problema.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-step">
+
+                        <span class="step-number">03</span>
+
+                        <h3>
+                            Solución
+                        </h3>
+
+                        <p>
+                            Realizamos el mantenimiento o
+                            servicio correspondiente.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-step">
+
+                        <span class="step-number">04</span>
+
+                        <h3>
+                            Entrega
+                        </h3>
+
+                        <p>
+                            Dejamos tu equipo listo para volver
+                            a utilizarlo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROYECTOS
+        ================================================== -->
+
+        <section id="proyectos" class="section projects-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        🚀 ESTUDIO 26
+                    </span>
+
+                    <h2>
+                        Proyectos e <span>ideas</span>
+                    </h2>
+
+                    <p>
+                        Un espacio para experimentar, crear,
+                        investigar y desarrollar nuevos proyectos.
+                    </p>
+
+                </div>
+
+
+                <div class="project-highlight">
+
+                    <div class="project-number">
+                        26
+                    </div>
+
+                    <div class="project-text">
+
+                        <h3>
+                            Centro de diseño, investigación
+                            y desarrollo
+                        </h3>
+
+                        <p>
+                            Estudio 26 busca combinar tecnología,
+                            creatividad, entretenimiento y desarrollo
+                            digital en un mismo espacio.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FACEBOOK
+        ================================================== -->
+
+        <section id="facebook" class="section social-section">
+
+            <div class="container">
+
+                <div class="social-card">
+
+                    <div class="social-icon">
+                        f
+                    </div>
+
+                    <div class="social-content">
+
+                        <span class="section-tag">
+                            📱 COMUNIDAD
+                        </span>
+
+                        <h2>
+                            Síguenos en Facebook
+                        </h2>
+
+                        <p>
+                            Encuentra nuestros torneos,
+                            publicaciones, promociones,
+                            contenido gamer y novedades.
+                        </p>
+
+                        <a href="https://www.facebook.com/EdisonZG26"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary">
+                            Visitar EdisonZG26
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
              CONTACTO
-        ========================== -->
+        ================================================== -->
+
         <section id="contacto" class="section contact-section">
 
-            <div class="section-title">
-                <span>04</span>
-                <h2>Contacto</h2>
-            </div>
+            <div class="container">
 
-            <div class="contact-content">
+                <div class="section-heading">
 
-                <div>
-                    <h3>¿Tienes una idea?</h3>
+                    <span class="section-tag">
+                        📞 CONTACTO
+                    </span>
+
+                    <h2>
+                        Hablemos de tu <span>proyecto</span>
+                    </h2>
 
                     <p>
-                        Podemos convertirla en un proyecto.
-                        Ponte en contacto con Estudio 26.
+                        ¿Necesitas mantenimiento para tu computador
+                        o consola? ¿Tienes una idea para desarrollar?
                     </p>
+
                 </div>
 
-                <div class="contact-links">
 
-                    <a href="mailto:contacto@estudio26.com">
-                        ✉ Correo electrónico
+                <div class="contact-options">
+
+                    <a href="https://www.facebook.com/EdisonZG26"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-item">
+
+                        <span>📘</span>
+
+                        <div>
+                            <strong>Facebook</strong>
+                            <small>
+                                EdisonZG26
+                            </small>
+                        </div>
+
                     </a>
 
-                    <a href="https://wa.me/" target="_blank">
-                        ☎ WhatsApp
+
+                    <a href="#servicios"
+                       class="contact-item">
+
+                        <span>🛠️</span>
+
+                        <div>
+                            <strong>Servicio técnico</strong>
+                            <small>
+                                Computadores y consolas
+                            </small>
+                        </div>
+
                     </a>
 
                 </div>
@@ -289,27 +661,64 @@
     </main>
 
 
-    <!-- =========================
-         PIE DE PÁGINA
-    ========================== -->
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer class="footer">
 
-        <div class="footer-logo">
-            ESTUDIO <span>26</span>
+        <div class="container footer-content">
+
+            <div>
+
+                <h3>
+                    🦖 ESTUDIO 26
+                </h3>
+
+                <p>
+                    Gaming • Tecnología • Creatividad
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#gaming">
+                    Gaming
+                </a>
+
+                <a href="#servicios">
+                    Servicios
+                </a>
+
+                <a href="#contacto">
+                    Contacto
+                </a>
+
+            </div>
+
         </div>
 
-        <p>
-            Diseño · Investigación · Desarrollo
-        </p>
 
-        <p class="copyright">
-            © 2026 Estudio 26. Todos los derechos reservados.
-        </p>
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="year"></span> Estudio 26.
+                Todos los derechos reservados.
+            </p>
+
+        </div>
 
     </footer>
 
 
+    <!-- JavaScript -->
     <script src="js/script.js"></script>
 
 </body>
-          </html>
+    </html>
