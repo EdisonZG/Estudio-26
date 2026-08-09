@@ -1,46 +1,52 @@
 :root {
 
-    /* =========================
-       COLORES PRINCIPALES
-    ========================= */
+/* =========================
+   COLORES PRINCIPALES
+========================= */
 
-    --negro: #000000;
-    --negro-suave: #070a09;
+--color-black: #000000;
+--color-dark: #070a09;
 
-    --blanco: #ffffff;
+--color-white: #ffffff;
 
-    --verde: #00ff66;
-    --verde-neon: #39ff88;
-
-
-    /* =========================
-       GRISES
-    ========================= */
-
-    --gris: #a0a0a0;
-    --gris-oscuro: #666666;
+--color-primary: #00ff66;
+--color-primary-light: #39ff88;
 
 
-    /* =========================
-       SUPERFICIES Y BORDES
-    ========================= */
+/* =========================
+   TEXTOS
+========================= */
 
-    --superficie: #111412;
-
-    --borde: rgba(255, 255, 255, 0.15);
-
-
-    /* =========================
-       CONTENEDOR
-    ========================= */
-
-    --contenedor: 1200px;
+--color-text-muted: #a0a0a0;
+--color-text-dark: #666666;
 
 
-    /* =========================
-       BORDES
-    ========================= */
+/* =========================
+   SUPERFICIES Y BORDES
+========================= */
 
-    --radio: 12px;
+--color-surface: #111412;
+--color-border: rgba(255, 255, 255, 0.15);
+
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+--container-width: 1200px;
+
+
+/* =========================
+   BORDES
+========================= */
+
+--border-radius: 12px;
+
+
+/* =========================
+   TIPOGRAFÍA
+========================= */
+
+--font-family: Arial, Helvetica, sans-serif;
 
 }
