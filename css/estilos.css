@@ -1,0 +1,862 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: var(--negro);
+
+    color: var(--blanco);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height: 1.6;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container {
+
+    width: min(
+        calc(100% - 40px),
+        var(--contenedor)
+    );
+
+    margin: auto;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background:
+        rgba(7,10,9,.92);
+
+    border-bottom:
+        1px solid var(--borde);
+
+    backdrop-filter:
+        blur(12px);
+
+}
+
+
+.nav-container {
+
+    min-height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-weight: bold;
+
+}
+
+
+.logo-number {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid var(--verde);
+
+    border-radius: 10px;
+
+    color: var(--verde);
+
+}
+
+
+.logo strong {
+
+    color: var(--verde);
+
+}
+
+
+.navbar {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+.navbar a {
+
+    padding: 8px;
+
+    color: var(--gris);
+
+    font-size: .9rem;
+
+}
+
+
+.navbar a:hover {
+
+    color: var(--verde);
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height:
+        calc(100vh - 75px);
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.hero-content {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 80px 0;
+
+}
+
+
+.tag {
+
+    color: var(--verde);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size: .75rem;
+
+    letter-spacing: .12em;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(
+            3rem,
+            8vw,
+            6rem
+        );
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: var(--verde);
+
+}
+
+
+.hero-description {
+
+    max-width: 600px;
+
+    color: var(--gris);
+
+    font-size: 1.1rem;
+
+    margin-bottom: 30px;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        12px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition:
+        .2s;
+
+}
+
+
+.btn-primary {
+
+    background:
+        var(--verde);
+
+    color:
+        #031108;
+
+}
+
+
+.btn-primary:hover {
+
+    background:
+        var(--verde-neon);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.btn-secondary {
+
+    border:
+        1px solid var(--borde);
+
+    color:
+        var(--blanco);
+
+}
+
+
+.btn-secondary:hover {
+
+    border-color:
+        var(--verde);
+
+    color:
+        var(--verde);
+
+}
+
+
+/* =========================
+   LOGO HERO
+========================= */
+
+.hero-logo {
+
+    display: grid;
+
+    place-items: center;
+
+}
+
+
+.logo-circle {
+
+    width:
+        min(420px, 80vw);
+
+    aspect-ratio: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        1px solid var(--verde);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(25,227,111,.12),
+            transparent 60%
+        );
+
+    box-shadow:
+        0 0 60px
+        rgba(25,227,111,.12);
+
+}
+
+
+.logo-circle span {
+
+    color:
+        var(--gris);
+
+    font-size:
+        .8rem;
+
+    letter-spacing:
+        .15em;
+
+}
+
+
+.logo-circle strong {
+
+    color:
+        var(--verde);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        6rem;
+
+    line-height:
+        1;
+
+}
+
+
+.logo-circle small {
+
+    color:
+        var(--gris-oscuro);
+
+    font-size:
+        .65rem;
+
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.section {
+
+    padding:
+        100px 0;
+
+}
+
+
+.section-title {
+
+    max-width:
+        700px;
+
+    margin-bottom:
+        45px;
+
+}
+
+
+.section-title h2 {
+
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            3.5rem
+        );
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.section-title h2 span {
+
+    color:
+        var(--verde);
+
+}
+
+
+.section-title > p:last-child {
+
+    color:
+        var(--gris);
+
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        18px;
+
+}
+
+
+.card {
+
+    min-height:
+        280px;
+
+    padding:
+        28px;
+
+    background:
+        var(--superficie);
+
+    border:
+        1px solid var(--borde);
+
+    border-radius:
+        var(--radio);
+
+    transition:
+        .2s;
+
+}
+
+
+.card:hover {
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        var(--verde);
+
+}
+
+
+.card-icon {
+
+    font-size:
+        2rem;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.card h3 {
+
+    margin-bottom:
+        12px;
+
+}
+
+
+.card p {
+
+    color:
+        var(--gris);
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.card a {
+
+    color:
+        var(--verde);
+
+    font-weight:
+        bold;
+
+}
+
+
+/* =========================
+   GAMING
+========================= */
+
+.gaming {
+
+    background:
+        var(--negro-suave);
+
+}
+
+
+.gaming-box {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.3fr .7fr;
+
+    gap:
+        30px;
+
+    padding:
+        45px;
+
+    border:
+        1px solid var(--borde);
+
+    border-radius:
+        25px;
+
+    background:
+        var(--superficie);
+
+}
+
+
+.status {
+
+    display:
+        inline-block;
+
+    margin-bottom:
+        25px;
+
+    color:
+        var(--verde);
+
+    font-family:
+        monospace;
+
+}
+
+
+.gaming-box h3 {
+
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            4rem
+        );
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.gaming-box p {
+
+    color:
+        var(--gris);
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.gaming-info {
+
+    display:
+        grid;
+
+    gap:
+        12px;
+
+}
+
+
+.gaming-info div {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid var(--borde);
+
+    border-radius:
+        10px;
+
+}
+
+
+.gaming-info strong {
+
+    font-size:
+        1.5rem;
+
+}
+
+
+.gaming-info span {
+
+    color:
+        var(--gris);
+
+}
+
+
+/* =========================
+   FACEBOOK
+========================= */
+
+.facebook {
+
+    padding:
+        100px 0;
+
+}
+
+
+.facebook-box {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        100px 1fr;
+
+    gap:
+        30px;
+
+    align-items:
+        center;
+
+    padding:
+        45px;
+
+    border:
+        1px solid var(--borde);
+
+    border-radius:
+        25px;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(25,227,111,.10),
+            var(--superficie)
+        );
+
+}
+
+
+.facebook-icon {
+
+    width:
+        80px;
+
+    height:
+        80px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        20px;
+
+    background:
+        var(--verde);
+
+    color:
+        #031108;
+
+    font-size:
+        3rem;
+
+    font-weight:
+        bold;
+
+}
+
+
+.facebook-box h2 {
+
+    font-size:
+        2.5rem;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.facebook-box p:not(.tag) {
+
+    color:
+        var(--gris);
+
+    margin-bottom:
+        20px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+
+    border-top:
+        1px solid var(--borde);
+
+    background:
+        #050706;
+
+    padding-top:
+        50px;
+
+}
+
+
+.footer-content {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        30px;
+
+    padding-bottom:
+        40px;
+
+}
+
+
+.footer h3 span {
+
+    color:
+        var(--verde);
+
+}
+
+
+.footer p {
+
+    color:
+        var(--gris-oscuro);
+
+}
+
+
+.footer-content > div:last-child {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        15px;
+
+}
+
+
+.footer-content a:hover {
+
+    color:
+        var(--verde);
+
+}
+
+
+.footer-bottom {
+
+    padding:
+        20px 0;
+
+    border-top:
+        1px solid rgba(255,255,255,.05);
+
+      }
