@@ -1,0 +1,233 @@
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+
+        gap: 2px;
+
+    }
+
+
+    .navbar a {
+
+        font-size:
+            .78rem;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .hero-content {
+
+        gap:
+            30px;
+
+    }
+
+
+    .gaming-box {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 700px) {
+
+    .container {
+
+        width:
+            calc(100% - 28px);
+
+    }
+
+
+    .nav-container {
+
+        min-height:
+            65px;
+
+    }
+
+
+    .navbar {
+
+        display:
+            none;
+
+    }
+
+
+    .hero {
+
+        min-height:
+            auto;
+
+    }
+
+
+    .hero-content {
+
+        grid-template-columns:
+            1fr;
+
+        text-align:
+            center;
+
+        padding:
+            70px 0;
+
+    }
+
+
+    .hero-description {
+
+        margin-inline:
+            auto;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content:
+            center;
+
+    }
+
+
+    .hero-logo {
+
+        margin-top:
+            30px;
+
+    }
+
+
+    .logo-circle {
+
+        width:
+            280px;
+
+    }
+
+
+    .logo-circle strong {
+
+        font-size:
+            4rem;
+
+    }
+
+
+    .section {
+
+        padding:
+            70px 0;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .gaming-box {
+
+        padding:
+            28px;
+
+    }
+
+
+    .facebook-box {
+
+        grid-template-columns:
+            1fr;
+
+        text-align:
+            center;
+
+        padding:
+            30px;
+
+    }
+
+
+    .facebook-icon {
+
+        margin:
+            auto;
+
+    }
+
+
+    .footer-content {
+
+        flex-direction:
+            column;
+
+    }
+
+}
+
+
+/* =========================
+   CELULARES PEQUEÑOS
+========================= */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+
+        font-size:
+            2.8rem;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .btn {
+
+        width:
+            100%;
+
+    }
+
+
+    .logo-circle {
+
+        width:
+            240px;
+
+    }
+
+}
