@@ -257,7 +257,6 @@ font-size: 2rem;
 
 /* ---------- GRID DE TARJETAS ---------- */
 
-.cards-grid,
 .cards-grid {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
