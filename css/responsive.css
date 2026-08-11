@@ -51,6 +51,26 @@
 ========================= */
 
 @media (max-width: 700px) {
+   .tournament-content {
+    grid-template-columns: 1fr;
+}
+
+.services-grid {
+    grid-template-columns: 1fr;
+}
+
+.process-grid {
+    grid-template-columns: 1fr;
+}
+
+.project-highlight {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.contact-options {
+    grid-template-columns: 1fr;
+}
 
    .menu-toggle {
     display: block;
