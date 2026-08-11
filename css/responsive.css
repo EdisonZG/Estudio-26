@@ -220,14 +220,9 @@
 
     }
 
-
-    .footer-content {
-
-        flex-direction:
-            column;
-
-    }
-
+.footer-content {
+    grid-template-columns: 1fr;
+}
 }
 
 
