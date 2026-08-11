@@ -149,7 +149,7 @@ color: var(--color-black);
 /* ---------- SECCIONES ---------- */
 
 .section {
-padding: 90px 0;
+    scroll-margin-top: 85px;
 }
 
 .section-heading {
