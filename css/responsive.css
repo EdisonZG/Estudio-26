@@ -264,3 +264,99 @@
     }
 
 }
+
+/* =========================================
+   PROYECTOS — RESPONSIVE
+========================================= */
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-philosophy .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ---------- CELULAR ---------- */
+
+@media (max-width: 700px) {
+
+    .projects-hero {
+        min-height: auto;
+        padding: 70px 20px;
+    }
+
+    .projects-hero .hero-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .projects-hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .projects-hero p {
+        font-size: 1rem;
+    }
+
+
+    .projects-section {
+        padding: 70px 20px;
+    }
+
+    .projects-section .section-header {
+        margin-bottom: 35px;
+    }
+
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .project-card {
+        padding: 25px;
+    }
+
+
+    .projects-philosophy {
+        padding: 70px 20px;
+    }
+
+
+    .projects-philosophy .process-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+}
+
+
+/* ---------- CELULAR PEQUEÑO ---------- */
+
+@media (max-width: 400px) {
+
+    .projects-hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .project-card {
+        padding: 22px;
+    }
+
+    .project-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 1.7rem;
+    }
+
+}
