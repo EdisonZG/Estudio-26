@@ -1,23 +1,20 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Proyectos de Estudio 26: diseño, investigación, desarrollo, tecnología, gaming y videojuegos.">
-
-    <meta name="theme-color" content="#000000">
 
     <title>Proyectos | Estudio 26</title>
 
-    <!-- Favicon -->
-    <link rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="assets/Logodragon.png">
+    <meta
+        name="description"
+        content="Conoce los proyectos de Estudio 26 en diseño, investigación, desarrollo, tecnología y gaming."
+    >
+
+    <meta name="author" content="Estudio 26">
+
+    <link rel="icon" type="image/png" href="assets/Logodragon.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/variables.css">
@@ -27,481 +24,565 @@
 
 <body>
 
-    <!-- ==============================
-         ENCABEZADO
-    =============================== -->
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-    <header class="header">
+    <header class="site-header">
 
-        <nav class="navbar">
+        <div class="container">
 
-            <!-- LOGO -->
-            <a href="index.html" class="logo">
-                <img src="assets/Logodragon.png"
-                     alt="Logo de Estudio 26">
+            <a href="index.html" class="brand">
 
-                <span>ESTUDIO 26</span>
+                <img
+                    src="assets/Logodragon.png"
+                    alt="Estudio 26"
+                    class="brand-logo"
+                >
+
+                <span class="brand-name">
+                    Estudio 26
+                </span>
+
             </a>
 
-            <!-- BOTÓN MENÚ MÓVIL -->
+
             <button
                 class="menu-toggle"
                 id="menu-toggle"
                 aria-label="Abrir menú"
-                aria-controls="main-menu"
-                aria-expanded="false">
-
-                <span></span>
-                <span></span>
-                <span></span>
-
+                aria-expanded="false"
+            >
+                ☰
             </button>
 
-            <!-- MENÚ -->
-            <ul class="nav-links" id="main-menu">
 
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-
-                <li>
-                    <a href="index.html#gaming">Gaming</a>
-                </li>
-
-                <li>
-                    <a href="index.html#servicios">Servicios</a>
-                </li>
-
-                <li>
-                    <a href="proyectos.html" class="active">
-                        Proyectos
-                    </a>
-                </li>
-
-                <li>
-                    <a href="index.html#contacto">Contacto</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </header>
-
-
-    <!-- ==============================
-         CONTENIDO PRINCIPAL
-    =============================== -->
-
-    <main>
-
-        <!-- HERO DE PROYECTOS -->
-
-        <section class="projects-hero">
-
-            <div class="hero-content">
-
-                <img
-                    src="assets/Logodragon.png"
-                    alt="Dragón de Estudio 26"
-                    class="hero-logo">
-
-                <h1>Nuestros proyectos</h1>
-
-                <p>
-                    En Estudio 26 investigamos, diseñamos,
-                    desarrollamos y convertimos ideas en proyectos.
-                </p>
-
-                <p>
-                    Este espacio reúne los proyectos actuales,
-                    experimentales y futuros que forman parte
-                    del universo de Estudio 26.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- ==============================
-             PROYECTOS
-        =============================== -->
-
-        <section class="projects-section" id="proyectos">
-
-            <div class="section-header">
-
-                <h2>Proyectos de Estudio 26</h2>
-
-                <p>
-                    Explora las diferentes áreas y proyectos
-                    que estamos construyendo.
-                </p>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-
-                <!-- PROYECTO 001 -->
-
-                <article class="project-card">
-
-                    <div class="project-icon">
-                        🐉
-                    </div>
-
-                    <span class="project-number">
-                        PROYECTO #001
-                    </span>
-
-                    <h3>Identidad Estudio 26</h3>
-
-                    <p>
-                        Desarrollo de la identidad visual de
-                        Estudio 26 y creación del dragón como
-                        símbolo principal de la marca.
-                    </p>
-
-                    <span class="project-status developing">
-                        En desarrollo
-                    </span>
-
-                </article>
-
-
-                <!-- PROYECTO 002 -->
-
-                <article class="project-card">
-
-                    <div class="project-icon">
-                        🌐
-                    </div>
-
-                    <span class="project-number">
-                        PROYECTO #002
-                    </span>
-
-                    <h3>Página web Estudio 26</h3>
-
-                    <p>
-                        Desarrollo del sitio web oficial de
-                        Estudio 26 como plataforma para presentar
-                        nuestros servicios, proyectos y
-                        experimentos.
-                    </p>
-
-                    <span class="project-status developing">
-                        En desarrollo
-                    </span>
-
-                </article>
-
-
-                <!-- PROYECTO 003 -->
-
-                <article class="project-card">
-
-                    <div class="project-icon">
-                        🎮
-                    </div>
-
-                    <span class="project-number">
-                        PROYECTO #003
-                    </span>
-
-                    <h3>Gaming</h3>
-
-                    <p>
-                        Espacio dedicado al contenido gaming,
-                        videojuegos, comunidad y futuros
-                        proyectos relacionados con los videojuegos.
-                    </p>
-
-                    <span class="project-status active">
-                        Activo
-                    </span>
-
-                </article>
-
-
-                <!-- PROYECTO 004 -->
-
-                <article class="project-card">
-
-                    <div class="project-icon">
-                        🏆
-                    </div>
-
-                    <span class="project-number">
-                        PROYECTO #004
-                    </span>
-
-                    <h3>Torneo COD Mobile</h3>
-
-                    <p>
-                        Torneo de Call of Duty Mobile con
-                        premios, comunidad y participación
-                        mediante nuestro grupo de WhatsApp.
-                    </p>
-
-                    <span class="project-status active">
-                        Activo
-                    </span>
-
-                </article>
-
-
-                <!-- PROYECTO 005 -->
-
-                <article class="project-card">
-
-                    <div class="project-icon">
-                        💻
-                    </div>
-
-                    <span class="project-number">
-                        PROYECTO #005
-                    </span>
-
-                    <h3>Servicios tecnológicos</h3>
-
-                    <p>
-                        Servicios de mantenimiento de
-                        computadores y consolas, incluyendo
-                        atención a domicilio.
-                    </p>
-
-                    <span class="project-status active">
-                        Activo
-                    </span>
-
-                </article>
-
-
-                <!-- PROYECTO 006 -->
-
-                <article class="project-card">
-
-                    <div class="project-icon">
-                        🎮
-                    </div>
-
-                    <span class="project-number">
-                        PROYECTO #006
-                    </span>
-
-                    <h3>Videojuegos</h3>
-
-                    <p>
-                        Desarrollo de videojuegos y
-                        experimentos interactivos para
-                        navegador.
-                    </p>
-
-                    <span class="project-status developing">
-                        En desarrollo
-                    </span>
-
-                </article>
-
-
-                <!-- PROYECTO 007 -->
-
-                <article class="project-card">
-
-                    <div class="project-icon">
-                        🔬
-                    </div>
-
-                    <span class="project-number">
-                        PROYECTO #007
-                    </span>
-
-                    <h3>Investigación</h3>
-
-                    <p>
-                        Espacio destinado a investigaciones,
-                        experimentos, análisis y exploración
-                        de nuevas ideas y tecnologías.
-                    </p>
-
-                    <span class="project-status future">
-                        Próximamente
-                    </span>
-
-                </article>
-
-
-                <!-- PROYECTO 008 -->
-
-                <article class="project-card">
-
-                    <div class="project-icon">
-                        📱
-                    </div>
-
-                    <span class="project-number">
-                        PROYECTO #008
-                    </span>
-
-                    <h3>Aplicaciones</h3>
-
-                    <p>
-                        Desarrollo futuro de aplicaciones
-                        móviles y herramientas digitales
-                        dentro del ecosistema de Estudio 26.
-                    </p>
-
-                    <span class="project-status future">
-                        Próximamente
-                    </span>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- ==============================
-             FILOSOFÍA
-        =============================== -->
-
-        <section class="projects-philosophy">
-
-            <div class="section-header">
-
-                <h2>La idea detrás de Estudio 26</h2>
-
-                <p>
-                    Cada proyecto nace de una idea y puede
-                    convertirse en una nueva oportunidad
-                    para aprender, experimentar y crear.
-                </p>
-
-            </div>
-
-
-            <div class="process-grid">
-
-                <div class="process-item">
-
-                    <span>01</span>
-
-                    <h3>Investigar</h3>
-
-                    <p>
-                        Buscamos información, analizamos
-                        problemas y exploramos posibilidades.
-                    </p>
-
-                </div>
-
-
-                <div class="process-item">
-
-                    <span>02</span>
-
-                    <h3>Diseñar</h3>
-
-                    <p>
-                        Convertimos las ideas en conceptos,
-                        diseños y experiencias.
-                    </p>
-
-                </div>
-
-
-                <div class="process-item">
-
-                    <span>03</span>
-
-                    <h3>Desarrollar</h3>
-
-                    <p>
-                        Construimos soluciones utilizando
-                        tecnología y creatividad.
-                    </p>
-
-                </div>
-
-
-                <div class="process-item">
-
-                    <span>04</span>
-
-                    <h3>Crear</h3>
-
-                    <p>
-                        Transformamos el resultado en un
-                        proyecto real que pueda seguir creciendo.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-    <!-- ==============================
-         FOOTER
-    =============================== -->
-
-    <footer class="footer">
-
-        <div class="footer-content">
-
-            <div class="footer-brand">
-
-                <img
-                    src="assets/Logodragon.png"
-                    alt="Estudio 26">
-
-                <h3>ESTUDIO 26</h3>
-
-                <p>
-                    Diseño, investigación, desarrollo y tecnología.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
+            <nav class="main-nav" id="main-nav">
 
                 <a href="index.html">
                     Inicio
-                </a>
-
-                <a href="proyectos.html">
-                    Proyectos
                 </a>
 
                 <a href="index.html#gaming">
                     Gaming
                 </a>
 
+                <a href="index.html#servicios">
+                    Servicios
+                </a>
+
+                <a href="proyectos.html" class="active">
+                    Proyectos
+                </a>
+
                 <a href="index.html#contacto">
                     Contacto
                 </a>
 
-            </div>
+            </nav>
 
         </div>
 
+    </header>
 
-        <div class="footer-bottom">
+
+    <!-- =========================
+         HERO / ENCABEZADO
+    ========================== -->
+
+    <main>
+
+        <section class="projects-hero">
+
+            <div class="container">
+
+                <span class="section-tag">
+                    🚀 ESTUDIO 26
+                </span>
+
+                <h1>
+                    Nuestros <span>proyectos</span>
+                </h1>
+
+                <p>
+                    Explora los proyectos que estamos creando,
+                    desarrollando e investigando en Estudio 26.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATÁLOGO DE PROYECTOS
+        ========================== -->
+
+        <section class="projects-catalog">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        CATÁLOGO
+                    </span>
+
+                    <h2>
+                        Todos nuestros <span>proyectos</span>
+                    </h2>
+
+                    <p>
+                        Conoce nuestras ideas, proyectos en desarrollo
+                        y trabajos realizados.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- =====================
+                         PROYECTO 01
+                    ====================== -->
+
+                    <article class="project-card">
+
+                        <div class="project-card-icon">
+                            🐉
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-category">
+                                Identidad
+                            </span>
+
+                            <h3>
+                                Identidad Estudio 26
+                            </h3>
+
+                            <p>
+                                Desarrollo de la identidad visual,
+                                concepto y presencia de Estudio 26.
+                            </p>
+
+                            <div class="project-status">
+
+                                <span>
+                                    Estado
+                                </span>
+
+                                <strong>
+                                    En desarrollo
+                                </strong>
+
+                            </div>
+
+                            <a
+                                href="#"
+                                class="project-link"
+                            >
+                                Ver proyecto →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================
+                         PROYECTO 02
+                    ====================== -->
+
+                    <article class="project-card">
+
+                        <div class="project-card-icon">
+                            🌐
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-category">
+                                Desarrollo web
+                            </span>
+
+                            <h3>
+                                Página web Estudio 26
+                            </h3>
+
+                            <p>
+                                Desarrollo de la plataforma web
+                                oficial de Estudio 26.
+                            </p>
+
+                            <div class="project-status">
+
+                                <span>
+                                    Estado
+                                </span>
+
+                                <strong>
+                                    En desarrollo
+                                </strong>
+
+                            </div>
+
+                            <a
+                                href="#"
+                                class="project-link"
+                            >
+                                Ver proyecto →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================
+                         PROYECTO 03
+                    ====================== -->
+
+                    <article class="project-card">
+
+                        <div class="project-card-icon">
+                            🎮
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-category">
+                                Gaming
+                            </span>
+
+                            <h3>
+                                Warriors Time
+                            </h3>
+
+                            <p>
+                                Proyecto de videojuego desarrollado
+                                dentro del área Gaming de Estudio 26.
+                            </p>
+
+                            <div class="project-status">
+
+                                <span>
+                                    Estado
+                                </span>
+
+                                <strong>
+                                    En desarrollo
+                                </strong>
+
+                            </div>
+
+                            <a
+                                href="juego/warriors-time/index.html"
+                                class="project-link"
+                            >
+                                Ver proyecto →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================
+                         PROYECTO 04
+                    ====================== -->
+
+                    <article class="project-card">
+
+                        <div class="project-card-icon">
+                            🏆
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-category">
+                                Gaming / Comunidad
+                            </span>
+
+                            <h3>
+                                Torneos Gaming
+                            </h3>
+
+                            <p>
+                                Organización y desarrollo de
+                                actividades y torneos Gaming.
+                            </p>
+
+                            <div class="project-status">
+
+                                <span>
+                                    Estado
+                                </span>
+
+                                <strong>
+                                    En desarrollo
+                                </strong>
+
+                            </div>
+
+                            <a
+                                href="index.html#gaming"
+                                class="project-link"
+                            >
+                                Ver proyecto →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================
+                         PROYECTO 05
+                    ====================== -->
+
+                    <article class="project-card">
+
+                        <div class="project-card-icon">
+                            💻
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-category">
+                                Tecnología
+                            </span>
+
+                            <h3>
+                                Servicios tecnológicos
+                            </h3>
+
+                            <p>
+                                Servicios de mantenimiento y
+                                soporte tecnológico.
+                            </p>
+
+                            <div class="project-status">
+
+                                <span>
+                                    Estado
+                                </span>
+
+                                <strong>
+                                    En desarrollo
+                                </strong>
+
+                            </div>
+
+                            <a
+                                href="index.html#servicios"
+                                class="project-link"
+                            >
+                                Ver proyecto →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================
+                         PROYECTO 06
+                    ====================== -->
+
+                    <article class="project-card">
+
+                        <div class="project-card-icon">
+                            🤖
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-category">
+                                Automatización
+                            </span>
+
+                            <h3>
+                                Bot de Telegram
+                            </h3>
+
+                            <p>
+                                Proyecto de automatización y
+                                desarrollo de un bot para Telegram.
+                            </p>
+
+                            <div class="project-status">
+
+                                <span>
+                                    Estado
+                                </span>
+
+                                <strong>
+                                    Planificación
+                                </strong>
+
+                            </div>
+
+                            <a
+                                href="#"
+                                class="project-link"
+                            >
+                                Ver proyecto →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================
+                         PROYECTO 07
+                    ====================== -->
+
+                    <article class="project-card">
+
+                        <div class="project-card-icon">
+                            📱
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-category">
+                                Desarrollo móvil
+                            </span>
+
+                            <h3>
+                                Aplicación móvil
+                            </h3>
+
+                            <p>
+                                Proyecto de aplicación móvil
+                                desarrollado con React Native.
+                            </p>
+
+                            <div class="project-status">
+
+                                <span>
+                                    Estado
+                                </span>
+
+                                <strong>
+                                    Planificación
+                                </strong>
+
+                            </div>
+
+                            <a
+                                href="#"
+                                class="project-link"
+                            >
+                                Ver proyecto →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================
+                         PROYECTO 08
+                    ====================== -->
+
+                    <article class="project-card">
+
+                        <div class="project-card-icon">
+                            🐲
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-category">
+                                Gaming / Web
+                            </span>
+
+                            <h3>
+                                Juego del Dragón
+                            </h3>
+
+                            <p>
+                                Proyecto experimental de juego
+                                para navegador y dispositivos móviles.
+                            </p>
+
+                            <div class="project-status">
+
+                                <span>
+                                    Estado
+                                </span>
+
+                                <strong>
+                                    Concepto
+                                </strong>
+
+                            </div>
+
+                            <a
+                                href="#"
+                                class="project-link"
+                            >
+                                Ver proyecto →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INVITACIÓN
+        ========================== -->
+
+        <section class="projects-footer">
+
+            <div class="container">
+
+                <h2>
+                    ¿Quieres conocer más sobre Estudio 26?
+                </h2>
+
+                <p>
+                    Explora nuestras áreas de trabajo y
+                    descubre lo que estamos desarrollando.
+                </p>
+
+                <a
+                    href="index.html"
+                    class="btn btn-primary"
+                >
+                    Volver al inicio
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
 
             <p>
-                © <span id="year"></span> Estudio 26.
-                Todos los derechos reservados.
+                © <span id="current-year"></span>
+                Estudio 26. Todos los derechos reservados.
             </p>
 
         </div>
@@ -515,6 +596,5 @@
     <script src="js/script.js"></script>
 
 </body>
+
 </html>
-```
-  
