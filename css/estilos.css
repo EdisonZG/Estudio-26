@@ -63,25 +63,21 @@ gap: 25px;
 }
 
 .logo {
-display: flex;
-align-items: center;
-gap: 10px;
-font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
 }
 
-.logo-icon {
-width: 42px;
-height: 42px;
-display: grid;
-place-items: center;
-border: 2px solid var(--color-primary);
-border-radius: 10px;
-color: var(--color-primary);
-font-weight: 900;
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
 }
 
-.logo-text {
-font-size: 1.15rem;
+.logo span {
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .navbar a {
