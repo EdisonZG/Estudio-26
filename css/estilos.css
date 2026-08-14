@@ -526,54 +526,46 @@ color: var(--color-primary);
     background: var(--color-black);
 }
 
-.projects-hero .hero-content {
+.projects-hero .container {
     width: min(850px, 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-}
-
-.projects-hero .hero-logo {
-    width: 130px;
-    height: 130px;
-    object-fit: contain;
-    margin-bottom: 10px;
-    filter: drop-shadow(0 0 20px rgba(0, 255, 102, 0.15));
 }
 
 .projects-hero h1 {
     font-size: clamp(2.5rem, 7vw, 4.5rem);
     line-height: 1;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .projects-hero p {
     max-width: 700px;
+    margin: 0 auto;
     color: var(--color-text-muted);
     font-size: 1.05rem;
 }
 
 
-/* ---------- ENCABEZADO DE SECCIÓN ---------- */
+/* ---------- CATÁLOGO ---------- */
 
-.projects-section {
+.projects-catalog {
     padding: 90px 20px;
     background: var(--color-dark);
 }
 
-.projects-section .section-header {
+
+/* ---------- ENCABEZADO DE SECCIÓN ---------- */
+
+.projects-catalog .section-heading {
     width: min(750px, 100%);
     margin: 0 auto 50px;
     text-align: center;
 }
 
-.projects-section .section-header h2 {
+.projects-catalog .section-heading h2 {
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 15px;
 }
 
-.projects-section .section-header p {
+.projects-catalog .section-heading p {
     color: var(--color-text-muted);
 }
 
@@ -598,8 +590,8 @@ color: var(--color-primary);
     padding: 30px;
 
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
 
     background: var(--color-surface);
 
@@ -621,14 +613,14 @@ color: var(--color-primary);
 
 /* ---------- ICONO ---------- */
 
-.project-icon {
+.project-card-icon {
+    flex: 0 0 65px;
+
     width: 65px;
     height: 65px;
 
     display: grid;
     place-items: center;
-
-    margin-bottom: 20px;
 
     border: 1px solid var(--color-primary);
     border-radius: 14px;
@@ -639,19 +631,28 @@ color: var(--color-primary);
 }
 
 
-/* ---------- NÚMERO ---------- */
+/* ---------- CONTENIDO ---------- */
 
-.project-card .project-number {
-    display: block;
+.project-card-content {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* ---------- CATEGORÍA ---------- */
+
+.project-category {
+    display: inline-block;
 
     margin-bottom: 8px;
+
+    color: var(--color-primary);
 
     font-size: 0.78rem;
     font-weight: 800;
 
     letter-spacing: 1.5px;
-
-    color: var(--color-primary);
+    text-transform: uppercase;
 }
 
 
@@ -667,7 +668,7 @@ color: var(--color-primary);
 /* ---------- DESCRIPCIÓN ---------- */
 
 .project-card p {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
     color: var(--color-text-muted);
 }
@@ -676,113 +677,53 @@ color: var(--color-primary);
 /* ---------- ESTADO ---------- */
 
 .project-status {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    gap: 8px;
 
-    margin-top: auto;
-
-    padding: 6px 12px;
-
-    border-radius: 20px;
+    margin-bottom: 20px;
 
     font-size: 0.78rem;
+}
+
+.project-status span {
+    color: var(--color-text-muted);
+}
+
+.project-status strong {
+    color: var(--color-primary);
     font-weight: 800;
 }
 
 
-/* Estado activo */
+/* ---------- ENLACE ---------- */
 
-.project-status.active {
-    color: var(--color-black);
-    background: var(--color-primary);
-}
+.project-link {
+    display: inline-flex;
+    align-items: center;
 
-
-/* Estado en desarrollo */
-
-.project-status.developing {
     color: var(--color-primary);
-    background: rgba(0, 255, 102, 0.08);
-    border: 1px solid var(--color-primary);
-}
 
+    font-weight: 800;
 
-/* Estado futuro */
-
-.project-status.future {
-    color: var(--color-text-muted);
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--color-border);
-}
-
-
-/* ---------- FILOSOFÍA ---------- */
-
-.projects-philosophy {
-    padding: 90px 20px;
-    background: var(--color-black);
-}
-
-.projects-philosophy .section-header {
-    width: min(750px, 100%);
-    margin: 0 auto 50px;
-    text-align: center;
-}
-
-.projects-philosophy .section-header h2 {
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: 15px;
-}
-
-.projects-philosophy .section-header p {
-    color: var(--color-text-muted);
-}
-
-
-/* ---------- PROCESO ---------- */
-
-.projects-philosophy .process-grid {
-    width: min(1100px, 100%);
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.process-item {
-    padding: 25px;
-
-    background: var(--color-surface);
-
-    border: 1px solid var(--color-border);
-    border-radius: 14px;
+    text-decoration: none;
 
     transition:
-        transform 0.25s ease,
-        border-color 0.25s ease;
+        color 0.2s ease,
+        transform 0.2s ease;
 }
 
-.process-item:hover {
-    transform: translateY(-5px);
-    border-color: var(--color-primary);
+.project-link:hover {
+    color: var(--color-text);
+    transform: translateX(4px);
 }
 
-.process-item span {
-    display: block;
 
-    margin-bottom: 15px;
+/* ---------- PIE DEL CATÁLOGO ---------- */
 
-    color: var(--color-primary);
+.projects-footer {
+    width: min(900px, 100%);
+    margin: 60px auto 0;
 
-    font-size: 1.8rem;
-    font-weight: 900;
+    text-align: center;
 }
-
-.process-item h3 {
-    margin-bottom: 10px;
-}
-
-.process-item p {
-    color: var(--color-text-muted);
-  }
