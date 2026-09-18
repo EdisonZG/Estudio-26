@@ -57,39 +57,39 @@
          ENCABEZADO
     ====================================================== -->
 
-    <header class="header">
+    <header class="header-principal">
+    <div class="contenedor nav-contenedor">
+        <!-- Logo de Estudio 26 -->
+        <a href="index.html" class="logo">
+            <img src="assets/Logodragon.png" alt="Logo Estudio 26" width="45">
+            <span>Estudio 26</span>
+        </a>
 
-        <div class="container nav-container">
-
-            <a href="index.html" class="logo">
-                    <img src="assets/Logodragon.png" alt="Estudio 26">
-                        <span>ESTUDIO 26</span>
-                        </a>
-
-                <nav class="navbar" id="main-menu">
-
-                <a href="#inicio">Inicio</a>
-                <a href="#gaming">Gaming</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-
-            </nav>
-
-            <button class="menu-toggle"
-        id="menu-toggle"
-        aria-label="Abrir menú"
-        aria-expanded="false"
-        aria-controls="main-menu">
-    ☰
+        <!-- MENÚ EN CARRUSEL HORIZONTAL -->
+        <nav class="carrusel-nav-contenedor" aria-label="Navegación principal">
+            <!-- Flecha Izquierda -->
+            <button type="button" class="btn-carrusel btn-izq" id="btn-izq" aria-label="Desplazar menú a la izquierda">
+                &#10094;
             </button>
 
-        </div>
+            <!-- Tira de enlaces de navegación deslizable -->
+            <div class="carrusel-nav" id="carrusel-nav">
+                <a href="#inicio" class="nav-item active">Inicio</a>
+                <a href="#servicios" class="nav-item">Servicios Técnicos</a>
+                <a href="#desarrollo" class="nav-item">Desarrollo Web</a>
+                <a href="juego/index.html" class="nav-item">Juegos</a>
+                <a href="proyectos.html" class="nav-item">Portafolio</a>
+                <a href="contacto.html" class="nav-item">Contacto</a>
+            </div>
 
+            <!-- Flecha Derecha -->
+            <button type="button" class="btn-carrusel btn-der" id="btn-der" aria-label="Desplazar menú a la derecha">
+                &#10095;
+            </button>
+        </nav>
+    </div>
     </header>
-
-
-    <main>
+    
 
         <!-- =================================================
              HERO / INICIO
