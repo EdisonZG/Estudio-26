@@ -134,9 +134,21 @@ class ProjectCarousel {
 }
 
 // Inicializar al cargar
-document.addEventListener('DOMContentLoaded', () => {
-    const carousel = new ProjectCarousel('.projects-carousel');
-    
-    // Disponible globalmente para debugging/control
-    window.projectCarousel = carousel;
+document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.getElementById("carrusel-nav");
+    const btnIzq = document.getElementById("btn-izq");
+    const btnDer = document.getElementById("btn-der");
+
+    if (!nav || !btnIzq || !btnDer) return;
+
+    // Distancia en píxeles que rueda con cada clic
+    const paso = 180;
+
+    btnIzq.addEventListener("click", () => {
+        nav.scrollBy({ left: -paso, behavior: "smooth" });
+    });
+
+    btnDer.addEventListener("click", () => {
+        nav.scrollBy({ left: paso, behavior: "smooth" });
+    });
 });
