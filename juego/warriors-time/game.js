@@ -1,10 +1,13 @@
 const container = document.getElementById('game-container');
 
-// 1. Escena, Cámara y Renderizador
+// 1. Escena
 const scene = new THREE.Scene();
+
+//cámara 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.set(0, 2, 5);
 
+// renderizar 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
