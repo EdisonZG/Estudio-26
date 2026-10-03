@@ -5,95 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- 2. SEO Principal -->
     <title>Estudio 26 | Gaming, Torneos y Servicio Técnico PC/Consolas</title>
     <meta name="description" content="Espacio donde la tecnología, el gaming y la creatividad se encuentran. Participa en torneos de Call of Duty Mobile y solicita mantenimiento de computadores y consolas.">
     <meta name="keywords" content="Estudio 26, gaming, torneos Call of Duty Mobile, mantenimiento PC, soporte consolas, servicio a domicilio">
     <meta name="author" content="Estudio 26">
     <meta name="robots" content="index, follow">
-    <!-- URL Canónica para evitar contenido duplicado -->
     <link rel="canonical" href="https://edisonzg.github.io/Estudio-26/">
-    <!-- 3. Favicon e Iconos para Dispositivos -->
-    <!-- Reemplaza las rutas por la ubicación real de tu logo/icono si los tienes -->
+
+    <!-- 3. Favicon e Iconos -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/Logodragon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/Logodragon.png">
-    <meta name="theme-color" content="#121212"> <!-- Color de la barra del navegador en móviles -->
-    <!-- 4. Open Graph / Facebook (Esencial para compartir en redes) -->
+    <meta name="theme-color" content="#121212">
+
+    <!-- 4. Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://edisonzg.github.io/Estudio-26/">
     <meta property="og:title" content="Estudio 26 | Gaming • Tecnología • Creatividad">
     <meta property="og:description" content="Torneos semanales de COD Mobile, pase de batalla y servicio técnico para computadores y consolas.">
-    <!-- Coloca aquí la imagen que deseas que aparezca en la vista previa al compartir tu enlace -->
     <meta property="og:image" content="https://edisonzg.github.io/Estudio-26/assets/Logodragon.png">
     <meta property="og:image:alt" content="Estudio 26 - Gaming y Tecnología">
     <meta property="og:site_name" content="Estudio 26">
     <meta property="og:locale" content="es_ES">
+
     <!-- 5. Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Estudio 26 | Gaming & Servicio Técnico">
     <meta name="twitter:description" content="Comunidad Gamer, torneos de COD Mobile y soporte técnico para tus equipos.">
     <meta name="twitter:image" content="https://edisonzg.github.io/Estudio-26/assets/Logodragon.png">
-    <!-- 6. Preconexión de Recursos Externos (Mejora la velocidad de carga) -->
-    <!-- Ejemplo si usas fuentes de Google Fonts -->
+
+    <!-- 6. Preconexión -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- 7. Hojas de Estilo Principales -->
+
+    <!-- 7. Hojas de Estilo -->
     <link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/estilos.css">
-<link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <!-- =====================================================
-         ENCABEZADO
-    ====================================================== -->
+
+    <!-- ENCABEZADO -->
     <header class="header-principal">
-    <div class="contenedor nav-contenedor">
-        <!-- MENÚ EN CARRUSEL HORIZONTAL -->
-        <nav class="carrusel-nav-contenedor" aria-label="Navegación principal">
-            <!-- Tira de enlaces de navegación -->
-            <div class="carrusel-nav" id="carrusel-nav">
-                <a href="index.html" class="nav-item"><img src="assets/Logodragon.png" alt="Logo Estudio 26" width="45">Estudio 26</a>
-                <a href="#servicios" class="nav-item">Servicios</a>
-                <a href="proyectos.html" class="nav-item">Proyectos</a>
-            </div>
-        </nav>
-    </div>
+        <div class="container nav-contenedor">
+            <nav class="carrusel-nav-contenedor" aria-label="Navegación principal">
+                <div class="carrusel-nav" id="carrusel-nav">
+                    <a href="index.html" class="nav-item">
+                        <img src="assets/Logodragon.png" alt="Logo Estudio 26" width="35" height="35">
+                        Estudio 26
+                    </a>
+                    <a href="#servicios" class="nav-item">Servicios</a>
+                    <a href="proyectos.html" class="nav-item">Proyectos</a>
+                </div>
+            </nav>
+        </div>
     </header>
-        <!-- HERO / INICIO -->
-        <section id="inicio" class="hero">
-            <div class="container hero-content">
-                <div class="hero-visual">
-                    <div class="hero-card">
-                        <img src="assets/Logodragon.png" alt="Estudio 26">
-                        <h2>ESTUDIO 26</h2>
-                        <p>
-                            Gaming Tecnología Creatividad Información
-                        </p>
+
+    <!-- HERO / INICIO -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <img src="assets/Logodragon.png" alt="Estudio 26 Logo" width="180" height="180" fetchpriority="high">
+                    <h1>ESTUDIO 26</h1>
+                    <p>Gaming • Tecnología • Creatividad</p>
+                    <div class="hero-actions">
+                        <a href="#servicios" class="btn-primary">Ver Servicios</a>
                     </div>
                 </div>
             </div>
-        </section>
-   <!-- =====================================================
-         FOOTER
-    ====================================================== -->
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS (AÑADIDA PARA CORREGIR EL ANCLA) -->
+    <section id="servicios" class="servicios-section">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <h3>Mantenimiento PC</h3>
+                    <p>Limpieza profunda, cambio de pasta térmica, optimización de software y diagnóstico de componentes.</p>
+                </div>
+                <div class="servicio-card">
+                    <h3>Soporte Consolas</h3>
+                    <p>Mantenimiento preventivo y correctivo para consolas de videojuegos.</p>
+                </div>
+                <div class="servicio-card">
+                    <h3>Torneos & Gaming</h3>
+                    <p>Organización de torneos semanales y comunidad de Call of Duty Mobile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-content">
             <div>
-                <h3>
-                    contacto🌐
-                </h3>
-                <p>
-                    Gaming • Tecnología • Creatividad
-                </p>
+                <h3>Contacto 🌐</h3>
+                <p>Gaming • Tecnología • Creatividad</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>
-                © <span id="year"></span> Estudio 26.
-                Todos los derechos reservados.
-            </p>
+            <p>© <span id="year"></span> Estudio 26. Todos los derechos reservados.</p>
         </div>
     </footer>
+
     <!-- JavaScript -->
     <script src="js/script.js"></script>
     <script src="js/menu.js"></script>
