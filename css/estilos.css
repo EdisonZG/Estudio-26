@@ -279,34 +279,6 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 25px;
 }
-
-/* ---------- PROCESO ---------- */
-
-.process-grid {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 20px;
-}
-
-.process-step {
-padding: 25px;
-}
-
-.step-number {
-display: inline-grid;
-place-items: center;
-width: 42px;
-height: 42px;
-margin-bottom: 15px;
-border-radius: 50%;
-background: var(--color-primary);
-color: var(--color-black);
-font-weight: 900;
-}
-
-.process-step p {
-color: var(--color-text-muted);
-}
 /* ---------- CONTACTO ---------- */
 .contact-section {
 background: var(--color-dark);
