@@ -776,31 +776,3 @@ color: var(--color-primary);
     color: #000000;
     font-weight: bold;
 }
-
-/* Flechas de navegación a los costados */
-.btn-carrusel {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.85);
-    color: var(--color-primario, #00ff66);
-    border: 1px solid var(--color-primario, #00ff66);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.btn-carrusel:hover {
-    background-color: var(--color-primario, #00ff66);
-    color: #000000;
-}
-
-.btn-izq { left: 0; }
-.btn-der { right: 0; }
