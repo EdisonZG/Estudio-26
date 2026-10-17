@@ -98,50 +98,6 @@ border-radius: 8px;
 cursor: pointer;
 font-size: 1.3rem;
 }
-
-/* ---------- BOTONES ---------- */
-
-.btn {
-display: inline-flex;
-align-items: center;
-justify-content: center;
-gap: 8px;
-padding: 12px 22px;
-border-radius: 8px;
-border: 1px solid transparent;
-font-weight: 700;
-cursor: pointer;
-transition:
-transform 0.25s ease,
-background 0.25s ease,
-color 0.25s ease,
-border-color 0.25s ease;
-}
-
-.btn:hover {
-transform: translateY(-2px);
-}
-
-.btn-primary {
-background: var(--color-primary);
-color: var(--color-black);
-}
-
-.btn-primary:hover {
-background: var(--color-primary-light);
-}
-
-.btn-secondary {
-border-color: var(--color-primary);
-color: var(--color-primary);
-background: transparent;
-}
-
-.btn-secondary:hover {
-background: var(--color-primary);
-color: var(--color-black);
-}
-
 /* ---------- SECCIONES ---------- */
 
 .section {
@@ -415,29 +371,6 @@ color: var(--color-primary);
 .project-text p {
 color: var(--color-text-muted);
 }
-
-/* ---------- REDES SOCIALES ---------- */
-
-.social-section {
-text-align: center;
-}
-
-.social-card {
-max-width: 700px;
-margin: 0 auto;
-padding: 35px;
-}
-
-.social-content {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.social-icon {
-font-size: 3rem;
-}
-
 /* ---------- CONTACTO ---------- */
 
 .contact-section {
